@@ -1,0 +1,13 @@
+<header class="container header center-box">
+    <div class="space-between-box">
+        <a href="/" id="logo"><img class="logo" src="/img/logo.png"></a>
+        <nav>
+            <ul>
+                <% if (typeof user != 'undefined') { %>
+                    <li><a href="/user/profile"><%= user.display_name %></a></li>
+                    <li><a href="/user/logout">Logout</a></li>
+                <% } %>
+            </ul>
+        </nav>
+    </div>
+</header>

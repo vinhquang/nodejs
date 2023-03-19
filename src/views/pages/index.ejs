@@ -1,0 +1,47 @@
+<div class="container center-box">
+    <div class="general-page">
+        <% if (dashboard) { %>
+            <div class="dashboard space-between-box">
+                <div class="dashboard-number">
+                    <h4>Total signed up</h4>
+                    <div class="number"><%= dashboard.total_user %></div>
+                </div>
+                <div class="dashboard-number">
+                    <h4>Active today</h4>
+                    <div class="number"><%= dashboard.total_user_active_today %></div>
+                </div>
+                <div class="dashboard-number">
+                    <h4>Average active 7 days</h4>
+                    <div class="number"><%= dashboard.avg_user_active_7_days %></div>
+                </div>
+            </div>
+        <% } %>
+
+
+        <h3 class="title">User list</h3>
+        <table class="aha-table">
+            <thead>
+                <tr>
+                    <th align="left" width="200">Full name</th>
+                    <th width="100">Login count</th>
+                    <th width="130">Last session</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% items.forEach(item => { %>
+                    <tr>
+                        <td><%-item.display_name %></td>
+                        <td align="center"><%-item.login_count %></td>
+                        <td>
+                            <% if (item.last_session) { %>
+                                <%-utils.formatDate(new Date(item.last_session)) %>
+                            <% } else { %>
+                                ...
+                            <% } %>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="container center-box">
+    <div class="new-password-page">
+        <h3 class="title">Account verification required!</h3>
+        <div class="title-description">Your account has not been activated yet. Please enter the email address associated with your account. We will resend a verification link to your email.</div>
+
+        <form action="" method="post" class="form">
+            <div class="field">
+                <input type="email" name="email" class="aha-input full-width" placeholder="Email" value="<%= data.email %>" />
+            </div>
+
+            <% if (message) { %>
+                <div class="error"><%= message %></div>
+            <% } %>
+            <% if (success) { %>
+                <div class="success"><%= success %></div>
+            <% } %>
+
+            <button class="aha-button full-width">Resend link</button>
+            <br /><br />
+            <a class="second-button full-width" href="/user/logout">Logout</a>
+        </form>
+    </div>
+</div>

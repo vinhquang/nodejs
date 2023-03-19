@@ -1,0 +1,52 @@
+<div class="container center-box">
+    <div class="sign-up-page">
+        <h3 class="title">Let's get you set up</h3>
+        <div class="title-description">If you are already using Aha, you can <a href="/user/login">Sign in</a> here.</div>
+
+        <form action="" method="post" class="form">
+            <div class="field">
+                <div class="field-title">
+                    <strong>Full name</strong>
+                </div>
+                <input type="text" name="full_name" class="aha-input full-width" placeholder="Full name" value="<%= data.full_name %>" />
+            </div>
+
+            <div class="field">
+                <div class="field-title">
+                    <strong>Email</strong>
+                </div>
+                <input type="email" name="email" class="aha-input full-width" placeholder="Email" value="<%= data.email %>" />
+            </div>
+
+            <div class="field center-box">
+                <div class="left">
+                    <div class="field-title">
+                        <strong>Password</strong>
+                    </div>
+                    <input type="password" name="password" class="aha-input full-width" placeholder="Password" />
+                </div>
+                <div class="right">
+                    <div class="field-title">
+                        <strong>Confirm password</strong>
+                    </div>
+                    <input type="password" name="confirm_password" class="aha-input full-width" placeholder="Confirm password" />
+                </div>
+            </div>
+
+            <% if (message) { %>
+                <div class="error"><%= message %></div>
+            <% } %>
+
+            <button class="aha-button full-width">Sign up</button>
+
+            <div class="social-login center-box">
+                <div class="google"><a href="/oauth/google">Login Google</a></div>
+                <div class="facebook"><a href="/oauth/facebook">Login Facebook</a></div>
+            </div>
+            
+            <div class="privacy-policy-and-terms">
+                By using Aha you are agreeing to our <strong>privacy policy</strong> and <strong>terms</strong>.
+            </div>
+        </form>
+    </div>
+</div>

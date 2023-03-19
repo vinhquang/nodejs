@@ -1,0 +1,41 @@
+<div class="container center-box">
+    <div class="login-page">
+        <h3 class="title">Welcome back</h3>
+        <div class="title-description">Need to create a new account? <a href="/user/sign-up">Sign up</a> here.</div>
+        <div class="social-login center-box">
+            <div class="google"><a href="/oauth/google">Login Google</a></div>
+            <div class="facebook"><a href="/oauth/facebook">Login Facebook</a></div>
+        </div>
+
+        <div class="login-or center-box">
+            <div>or</div>
+        </div>
+
+        <form action="" method="post" class="form">
+            <div class="field">
+                <div class="field-title">
+                    <strong>Email</strong>
+                </div>
+                <input type="email" name="email" class="aha-input full-width" placeholder="Email" value="<%= data.email %>" />
+            </div>
+
+            <div class="field">
+                <div class="field-title">
+                    <strong>Password</strong>
+                    <a href="/user/reset-password" class="forgot-password">Forgot password?</a>
+                </div>
+                <input type="password" name="password" class="aha-input full-width" placeholder="Password" />
+            </div>
+
+            <% if (message) { %>
+                <div class="error"><%= message %></div>
+            <% } %>
+
+            <button class="aha-button full-width">Sign in</button>
+
+            <div class="privacy-policy-and-terms">
+                By using Aha you are agreeing to our <strong>privacy policy</strong> and <strong>terms</strong>.
+            </div>
+        </form>
+    </div>
+</div>

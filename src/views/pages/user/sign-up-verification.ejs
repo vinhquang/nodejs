@@ -1,0 +1,24 @@
+<div class="container center-box">
+    <div class="new-password-page">
+        <% if (error) { %>
+            <h3 class="title">Account verification error!</h3>
+            <div class="title-description">Your account has not been activated yet. Please check your email for the verification link.</div>
+
+            <form class="form">
+                <div class="error"><%= error %></div>
+            </form>
+
+            <a class="aha-button" href="/">Go to home</a>
+        <% } else if (success) { %>
+            <h3 class="title">Account verification completed!</h3>
+            <form class="form">
+                <div class="success"><%= success %></div>
+            </form>
+
+            <a class="aha-button" href="/">Go to home</a>
+        <% } else { %>
+
+        <% } %>
+    </div>
+</div>
+            

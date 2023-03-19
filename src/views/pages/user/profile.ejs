@@ -1,0 +1,34 @@
+<div class="container center-box">
+    <div class="general-page">
+        <h3 class="title">Hello <%= user.display_name %></h3>
+        <div class="title-description">
+            (<a href="/user/display-name/reset">Reset default name</a>)
+        </div>
+        <div class="title-description">Email: <%= user.email %></div>
+        <% if (previousSession) { %>
+            <div class="title-description">
+                Last session: 
+                <% if (previousSession.date_updated) { %>
+                    <%= utils.formatDate(new Date(previousSession.date_updated)) %>
+                <% } else { %>
+                    <%= utils.formatDate(new Date(previousSession.date_created)) %>
+                <% } %>
+            </div>
+        <% } %>
+
+        <form action="" method="post" class="form">
+            <div class="field">
+                <div class="field-title">
+                    <strong>Full name</strong>
+                </div>
+                <input type="text" name="display_name" class="aha-input full-width" placeholder="Full name" value="<%= data.display_name %>" />
+            </div>
+
+            <% if (message) { %>
+                <div class="error"><%= message %></div>
+            <% } %>
+
+            <button class="aha-button full-width">Update</button>
+        </form>
+    </div>
+</div>

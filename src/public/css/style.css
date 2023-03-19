@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+
+html, body {
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #EFEFEF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #0173cf;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  color: #0173ED;
+}
+.container, .container >div {
+    width: 500px;
+}
+.center-box {
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.space-between-box {
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.aha-button {
+  height: 40px;
+  color: #FFF;
+  background-color: #0173cf;
+
+  border-radius: 4px;
+  border: none;
+  line-height: 20px;
+  font-weight: 600;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+  padding: 0 16px;
+  box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  text-shadow: none;
+  text-align: center;
+  justify-content: center;
+  min-width: 0;
+}
+.aha-button:hover {
+  transition:all .15s ease-in-out;
+  background-color: #0173BB;
+  color: #ddd;
+}
+.second-button {
+  height: 40px;
+  color: #000;
+
+  border-radius: 4px;
+  border: 1px solid gray;
+  line-height: 20px;
+  font-weight: 600;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+  box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  text-shadow: none;
+  text-align: center;
+  justify-content: center;
+  min-width: 0;
+}
+.second-button:hover {
+  transition:all .15s ease-in-out;
+  border: 1px solid #ddd;
+  color: gray;
+}
+.aha-input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 1.5;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.full-width {
+  width: 100%;
+}
+
+.header {
+    width: 500px;
+    margin: 8px auto;
+}
+.header >div {
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 3%);
+    padding: 8px;
+}
+.header >div .logo {
+    height: 32px;
+}
+.header >div nav li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.footer {
+    width: 500px;
+    margin: 8px auto;
+}
+.footer >div {
+    width: 100%;
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 3%);
+    padding: 8px;
+    text-align: center;
+}
+.footer >div .logo {
+    height: 32px;
+}
+.footer >div nav li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.general-page {
+    background-color: #FFF;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 3%);
+    padding: 32px;
+}
+.general-page .logo {
+    height: 32px;
+    margin-bottom: 32px;
+}
+.general-page .title {
+    margin-bottom: 4px;
+}
+.general-page .title-description {
+    color: #999;
+    margin-bottom: 16px;
+}
+.general-page .form {
+
+}
+.general-page .form .field {
+    margin-bottom: 16px;
+    padding: ;
+}
+.general-page .form .field .left {
+    width: 50%;
+    margin-right: 4px;
+}
+.general-page .form .field .right {
+    width: 50%;
+    margin-left: 8px;
+}
+.general-page .form .field .field-title {
+    margin-bottom: 4px;
+}
+.general-page .form .field .field-title .forgot-password {
+    float: right;
+}
+.general-page .form .privacy-policy-and-terms {
+    text-align: center;
+    color: #777;
+    margin-top: 12px;
+    font-size: 12px;
+}
+.general-page .form .error {
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+    color: red;
+}
+.general-page .form .success {
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+    color: green;
+}
+
+.aha-table, .aha-table tr, .aha-table td, .aha-table th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.dashboard {
+    margin-bottom: 32px;
+}
+.dashboard-number h4 {
+    margin-bottom: 4px;
+}
+.dashboard-number .number {
+    text-align: center;
+    font-size: 24px;
+}
