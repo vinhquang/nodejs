@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2f968898-750b-4643-a9de-020a5e94bd9a",
+		"_postman_id": "0a6dcc4e-a2a0-49c0-9deb-f56359052220",
 		"name": "vinhquang09@gmail.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -987,7 +987,7 @@
 		},
 		{
 			"key": "endpoint",
-			"value": "http://aha.quangnguyen.work"
+			"value": "https://nodejs.quangnguyen.work"
 		},
 		{
 			"key": "session_id",
